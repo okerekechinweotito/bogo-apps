@@ -1,0 +1,27 @@
+.mobilenav{
+    position: absolute;
+    width:100%;
+    height:100vh;
+    background: rgba(black,0.5);
+    top:0;
+    left:0;
+    z-index: 10;
+    transform-origin: top right;
+    transform: scale(0);
+    .nav__list{
+        width:90%;
+        height:70vh;
+        display:grid;
+        align-content: center;
+        justify-content: center;
+        position: absolute;
+        top:1rem;
+        left:5%;
+        
+    }
+    
+    .nav__link{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}

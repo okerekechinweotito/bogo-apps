@@ -1,0 +1,45 @@
+.card {
+    background: white;
+    box-shadow: 0 0 1rem rgba(black, 0.2),
+                2px 3px 0 white;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 2rem;
+    padding-bottom: 3.5rem;
+    position: relative;
+    height: max-content;
+
+    &:hover &__img {
+        animation: flicker 300ms linear;
+    }
+
+    &__title {
+        color: var(--blueText2);
+        font-size: 2rem;
+        line-height: 1;
+        letter-spacing: 0px;
+        width: 50%;
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        position: absolute;
+        filter: drop-shadow(0 0 0.5rem rgba(black, 0.3));
+        top: -2rem;
+        right: 0.5rem;
+        width:8rem;
+    }
+
+    &__sub {
+        color: var(--blueText);
+        width:90%;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: -1.2rem;
+        left: 2rem;
+    }
+}

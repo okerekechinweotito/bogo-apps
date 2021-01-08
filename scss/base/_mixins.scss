@@ -1,0 +1,11 @@
+@mixin query($bp){
+    @if ($bp == tab){
+        @media only screen and (max-width:900px){@content};
+    }
+    @if ($bp == cp){
+        @media only screen and (max-width:600px){@content};
+    }
+    @if ($bp == scp){
+        @media only screen and (max-width:400px){@content};
+    }
+}

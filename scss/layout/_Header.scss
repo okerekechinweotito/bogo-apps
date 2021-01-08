@@ -1,0 +1,39 @@
+.header{
+    background-image: url(../img/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    ::selection{
+        background:white;
+        color:black;
+    }
+    
+    @include query(tab){
+        background-position: left;
+    }
+
+    .container{
+        min-height: 100vh;
+        display:grid;
+        align-items: center;
+        justify-items: start;
+        align-content: center;
+        gap:2rem;
+
+        @include query(cp) {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .white-outline{
+            @include query(cp) {
+                position: relative;
+                left:50%;
+                transform: translateX(-50%);
+            }
+        
+        }
+    }
+
+
+
+}

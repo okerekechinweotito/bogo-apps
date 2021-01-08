@@ -1,0 +1,14 @@
+.features {
+    padding-top: 15rem;
+    padding-bottom: 4rem;
+    @include query(tab){
+        padding-top: 8rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        gap:3rem;
+
+    }
+}

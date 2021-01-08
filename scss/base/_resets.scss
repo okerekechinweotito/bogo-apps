@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+:root {
+    --orange1: #ffb445;
+    --orange2: #ff9336;
+    --orangeShadow: #d96200;
+    --blue1: #27cefe;
+    --blue2: #1a88fe;
+    --blueShadow: #0066da;
+    --green1: #afe442;
+    --green2: #6fb625;
+    --greenShadow: #447515;
+
+    --logoBlue: #02e2ec;
+    --logoOrange: #fec601;
+    --logoRed: #f52501;
+    --logoGreen: #b3f00c;
+
+    --gray1:#f7f6fe;
+    --gray2:#edeffc;
+    --bgBlue:#2f5fff;
+    --bgBlue2:#1949e7;
+
+    --blueText: #5175f0;
+    --blueText2: #6b7eb6;
+    --darkText: #545569;
+    --darkText2:#868db5;
+    --darkText3:#4b4e5e;
+
+    --formBg:#1949e7;
+
+    --orangeGradient:linear-gradient(to bottom,var(--orange1),var(--orange2));
+    --blueGradient:linear-gradient(to bottom,var(--blue1),var(--blue2));
+    --greenGradient:linear-gradient(to bottom,var(--green1),var(--green2));
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    transition: 300ms;
+}
+
+html {
+    box-sizing: border-box;
+
+    @include query(tab){
+        font-size: 90%;
+    }
+    @include query(cp) {
+        font-size: 80%;
+    }
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+li {
+    list-style: none;
+}

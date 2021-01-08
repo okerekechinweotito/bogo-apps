@@ -1,0 +1,23 @@
+.openNav {
+    transform: scale(1) !important;
+}
+
+.bar1Open {
+    transform:rotate(45deg);
+    transform-origin: left;
+    height:4px !important;
+}
+.bar2Open {
+    opacity:0 !important;
+    height:4px !important;
+}
+
+.bar3Open {
+    transform: rotate(-45deg);
+    transform-origin: left;
+    height:4px !important;
+}
+
+.padded{
+    padding-left: 5px !important;
+}

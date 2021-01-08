@@ -1,0 +1,84 @@
+.story {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding-top: 4rem;
+
+        @include query(cp) {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+
+    }
+
+    .title {
+        color: var(--blueText);
+        font-size: 4rem;
+        line-height: 1;
+        font-weight: 900;
+        width: 80%;
+        margin-bottom: 2rem;
+
+        @include query(tab) {
+            width: 100%;
+        }
+    }
+
+    .sub {
+        color: var(--darkText2);
+        width: 80%;
+        font-weight: 600;
+        margin-bottom: 2rem;
+
+        @include query(cp) {
+            width:100%;
+        }
+
+    }
+
+    &__cover {
+        position: relative;
+        height: 20rem;
+
+        @include query(cp) {
+            width:100%;
+            height:30rem;
+            display:grid;
+            place-items: center;
+        }
+
+    }
+
+    &__img {
+        position: absolute;
+        display: block;
+        border-radius: 1rem;
+        border: 20px solid white;
+        box-shadow: 0 0 1rem rgba(black, 0.2);
+        left: -10rem;
+        width: 100%;
+
+        @include query(tab) {
+            width: 30rem;
+        }
+
+        @include query(cp) {
+            position: relative;
+            left:unset;
+            width:100%;
+        }
+    }
+
+    .btn {
+        position: relative;
+        bottom: -2rem;
+
+
+    }
+
+    &__text{
+        display:grid;
+        justify-items: center;
+    }
+}

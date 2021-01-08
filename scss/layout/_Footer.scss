@@ -1,0 +1,106 @@
+.footer {
+    background: #1949e7;
+    
+    @include query(cp) {
+        padding:3rem 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        & > *:not(:last-child) {
+            margin-right: 1rem;
+
+            
+        @include query(tab){
+            margin-right:0;
+        }
+        }
+
+        
+        @include query(tab){
+            display:grid;
+            gap:2rem;
+            justify-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__note {
+        display: grid;
+        font-weight: 900;
+        font-size: 0.9rem;
+        font-family: "Lato", sans-serif;
+
+        
+        @include query(tab){
+            grid-template-columns: 1fr 1fr;
+            order:9;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+
+        & > *:not(:last-child) {
+            margin-right: 2rem;
+            @include query(cp) {
+                margin-right: 0;
+            }
+        
+        }
+
+
+        @include query(cp) {
+            display:grid;
+            gap:1rem;
+            justify-items: center;
+            text-align: center;
+        }
+    
+    }
+
+    &__social {
+        display: flex;
+
+        & > *:not(:last-child) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    & .icon {
+        display: block;
+    }
+
+
+     .fb {
+        color: blue;
+    }
+     .twt {
+        color: cyan;
+    }
+     .yt {
+        color: red;
+    }
+
+    &__socialItem {
+        width: 3rem;
+        height: 3rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        box-shadow: 5px 5px 5px rgba(black,0.4);
+
+        &:hover a{
+            animation:flip 400ms linear;
+        }
+    }
+}
